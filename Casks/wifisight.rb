@@ -18,8 +18,9 @@ cask "wifisight" do
   app "WiFiSight.app"
 
   # not notarized: drop quarantine so Gatekeeper doesn't block the first launch
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/WiFiSight.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/WiFiSight.app"],
+                          writable_paths: ["WiFiSight.app"], writable_base: :appdir
   end
 
   zap trash: [
