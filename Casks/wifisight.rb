@@ -4,7 +4,7 @@ cask "wifisight" do
 
   url "https://github.com/tsuyopon123/wifisight/releases/download/v#{version}/WiFiSight_#{version}_universal.dmg"
   name "WiFiSight"
-  desc "Wi-Fi survey and heatmap tool"
+  desc "Cross-platform Wi-Fi scanner for event NOCs"
   homepage "https://github.com/tsuyopon123/wifisight"
 
   livecheck do
