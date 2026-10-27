@@ -1,6 +1,6 @@
 cask "wifisight" do
-  version "0.1.1"
-  sha256 "63d52e9146ff145ddff467755f93db47039c5eec84dd3ef5d452b369d9048031"
+  version "0.1.2"
+  sha256 "d52511c98ab5ce9632bda87bcff4e6e713791c6f29e1dfecc91eaca6ed232af1"
 
   url "https://github.com/tsuyopon123/wifisight/releases/download/v#{version}/WiFiSight_#{version}_universal.dmg"
   name "WiFiSight"
